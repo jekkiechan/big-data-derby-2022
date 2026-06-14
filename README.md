@@ -40,10 +40,7 @@ An **animated relative-position view** (see GIF above): each horse's position re
 
 ## Contributors
 
-A two-person project:
-
-- **Tanapat Ratana** — [tarratana](https://www.kaggle.com/tarratana) — consolidated `big-derby-master` dataset and the relative-position visualization.
-- **Rungrawin Warunanont** — [rungrawinwarunanont](https://www.kaggle.com/rungrawinwarunanont) — final writeup (distance, segment, and zone analysis).
+A collaborative two-person project by **Tanapat Ratana** ([tarratana](https://www.kaggle.com/tarratana)) and **Rungrawin Warunanont** ([rungrawinwarunanont](https://www.kaggle.com/rungrawinwarunanont)) — the final writeup and analysis were a joint effort.
 
 ## Stack
 
