@@ -22,6 +22,18 @@ The team's final competition writeup:
 ### `relative-position-visualization.ipynb` — my contribution
 An **animated relative-position view** (see GIF above): each horse's position relative to the field over the course of a race, derived from the trakus table — angle/zone computation and a frame-by-frame `trakus_index` animation. This was an exploratory component developed alongside the final writeup.
 
+## Key findings
+
+**Winners run more in the second half.** Splitting each race into segments and measuring distance relative to the field, the front of the field accelerates *away* in the back half — and higher finishers commit to it earlier. The effect holds across course types (rows) and is strongest for eventual 1st/2nd-place horses (columns).
+
+![Relative distance by race segment](images/distance-by-segment.png)
+
+**Finishing position is decided late.** This rank-by-segment heatmap shows where a horse's final placing gets locked in: the dark band concentrates in the **80–100% segment**, i.e. position is largely settled in the closing stretch rather than early.
+
+![When finishing position is decided](images/position-locks-in-by-segment.png)
+
+> The full notebook renders all 15 figures inline (distance distributions, segment analysis, zone transitions per race type) — view [`final-writeup.ipynb`](final-writeup.ipynb).
+
 ## My role
 
 Built the consolidated `big-derby-master` dataset the team's analysis runs on, and the relative-position visualization. The final writeup was authored collaboratively (primary author: teammate [rungrawinwarunanont](https://www.kaggle.com/rungrawinwarunanont)).
