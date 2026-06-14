@@ -19,8 +19,8 @@ The team's final competition writeup:
 - **Zone analysis** — classifying each horse's position into directional zones and tracking zone changes (most positional churn happens early).
 - **Conclusion** — actionable takeaways on race strategy.
 
-### `relative-position-visualization.ipynb` — my contribution
-An **animated relative-position view** (see GIF above): each horse's position relative to the field over the course of a race, derived from the trakus table — angle/zone computation and a frame-by-frame `trakus_index` animation. This was an exploratory component developed alongside the final writeup.
+### `relative-position-visualization.ipynb`
+An **animated relative-position view** (see GIF above): each horse's position relative to the field over the course of a race, derived from the trakus table — angle/zone computation and a frame-by-frame `trakus_index` animation. An exploratory component developed alongside the final writeup.
 
 ## Key findings
 
@@ -40,7 +40,8 @@ An **animated relative-position view** (see GIF above): each horse's position re
 
 ## Contributors
 
-A collaborative two-person project by **Tanapat Ratana** ([tarratana](https://www.kaggle.com/tarratana)) and **Rungrawin Warunanont** ([rungrawinwarunanont](https://www.kaggle.com/rungrawinwarunanont)) — the final writeup and analysis were a joint effort.
+- **Tanapat Ratana** — [tarratana](https://www.kaggle.com/tarratana)
+- **Rungrawin Warunanont** — [rungrawinwarunanont](https://www.kaggle.com/rungrawinwarunanont)
 
 ## Stack
 
