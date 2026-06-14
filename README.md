@@ -32,11 +32,18 @@ An **animated relative-position view** (see GIF above): each horse's position re
 
 ![When finishing position is decided](images/position-locks-in-by-segment.png)
 
-> The full notebook renders all 15 figures inline (distance distributions, segment analysis, zone transitions per race type) — view [`final-writeup.ipynb`](final-writeup.ipynb).
+**Winners hold the front zones the whole way.** Classifying each horse's position into directional zones (front-left, front-right, left, right, back-left, back-right) and tracking zone occupancy across segments: in Stakes races, eventual winners (top row) concentrate in the **front-left / front-right** zones from the opening segment onward, while the rest of the field is spread across the back and side zones.
 
-## My role
+![Zone occupancy by finishing position — Stakes races](images/zone-occupancy-stakes.png)
 
-Built the consolidated `big-derby-master` dataset the team's analysis runs on, and the relative-position visualization. The final writeup was authored collaboratively (primary author: teammate [rungrawinwarunanont](https://www.kaggle.com/rungrawinwarunanont)).
+> The full notebook renders all 15 figures inline (distance distributions, segment analysis, zone transitions and per-race-type zone overviews) — view [`final-writeup.ipynb`](final-writeup.ipynb).
+
+## Contributors
+
+A two-person project:
+
+- **Tanapat Ratana** — [tarratana](https://www.kaggle.com/tarratana) — consolidated `big-derby-master` dataset and the relative-position visualization.
+- **Rungrawin Warunanont** — [rungrawinwarunanont](https://www.kaggle.com/rungrawinwarunanont) — final writeup (distance, segment, and zone analysis).
 
 ## Stack
 
