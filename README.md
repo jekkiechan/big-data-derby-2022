@@ -1,29 +1,31 @@
 # Big Data Derby 2022 — Horse Racing Tracking Analysis
 
-Analysis and visualization for the [Big Data Derby 2022](https://www.kaggle.com/competitions/big-data-derby-2022) Kaggle competition, using NYRA (New York Racing Association) GPS tracking data from Aqueduct, Belmont, and Saratoga. The goal was to mine per-stride positional data to find insights into racing strategy and horse welfare.
+Team submission for the [Big Data Derby 2022](https://www.kaggle.com/competitions/big-data-derby-2022) Kaggle competition — an **Analytics** competition (no leaderboard; entries are judged as writeups). It uses NYRA (New York Racing Association) per-stride GPS tracking data from Aqueduct, Belmont, and Saratoga to find insights into racing strategy and horse welfare.
 
 ![Relative position animation](relative_position.gif)
 
 ## Data
 
-The competition provides ~5 Hz GPS tracking (`trakus`) for every horse in every race, alongside race and start tables. Each record is a horse's latitude/longitude at a point in time, which we convert to track-relative coordinates, cumulative distance, and inter-horse spacing.
+The competition provides ~5 Hz GPS tracking (`trakus`) for every horse in every race, plus race and start tables. Each record is a horse's latitude/longitude over time, converted to track-relative coordinates, cumulative distance, and inter-horse spacing. All notebooks here run on a consolidated master dataset, `tarratana/big-derby-master`, built for the team.
 
-## What's here
+## Contents
 
-### `distance-analysis.ipynb`
-The main analysis notebook:
+### `final-writeup.ipynb` — the submitted analysis
+The team's final competition writeup:
 
-- **Distance analysis** — relationship between total distance run and finishing position, broken down by course and race type, including how distance is allocated across race segments. Finding: higher placers tend to accelerate harder in the *second half* of the race relative to their peers.
-- **Zone analysis** — a methodology for classifying each horse's position into directional zones and tracking zone changes over the race (most positional churn happens early).
-- **Jockey vs. horse** — why naively attributing performance to the jockey doesn't work, and how to frame it properly.
-- **Suggestions to jockeys** — actionable takeaways from the above.
+- **Problem statement** — what is the optimal strategy for a horse to run a race?
+- **Distance analysis** — distance ran vs. finishing position, by course type and race type, including a per-segment breakdown. Finding: high placers tend to run *more* in the second half relative to their peers.
+- **Ranking by segment** — how relative position evolves across the race under different track/race conditions.
+- **Zone analysis** — classifying each horse's position into directional zones and tracking zone changes (most positional churn happens early).
+- **Conclusion** — actionable takeaways on race strategy.
 
-### `relative-position-visualization.ipynb`
-Builds the **animated relative-position view** (see GIF above): each horse's position relative to the field over the course of a race, derived from the trakus tracking table — angle/zone computation and a frame-by-frame `trakus_index` animation.
+### `relative-position-visualization.ipynb` — my contribution
+An **animated relative-position view** (see GIF above): each horse's position relative to the field over the course of a race, derived from the trakus table — angle/zone computation and a frame-by-frame `trakus_index` animation. This was an exploratory component developed alongside the final writeup.
+
+## My role
+
+Built the consolidated `big-derby-master` dataset the team's analysis runs on, and the relative-position visualization. The final writeup was authored collaboratively (primary author: teammate [rungrawinwarunanont](https://www.kaggle.com/rungrawinwarunanont)).
 
 ## Stack
 
 `pandas` · `seaborn` · `matplotlib` (animation)
-
----
-*Team submission; the relative-position visualization is my contribution. Originally developed on Kaggle ([tarratana](https://www.kaggle.com/tarratana)).*
